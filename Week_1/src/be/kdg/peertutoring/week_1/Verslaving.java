@@ -9,7 +9,7 @@ public class Verslaving {
         String naam = "";
 
         //Uitbreiding C
-        int aantalUsers = 0;
+        final int aantalUsers = 0;
         String oldUser = "xxx";
 
         int aantalJa = 0;

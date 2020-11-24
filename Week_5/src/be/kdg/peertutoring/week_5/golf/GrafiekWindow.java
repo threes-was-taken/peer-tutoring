@@ -16,16 +16,16 @@ public class GrafiekWindow extends JFrame {
         Color kleur;
     }
 
-    private List<Punt> punten;
-    private double breedte;
-    private double hoogte;
+    private final List<Punt> punten;
+    private final double breedte;
+    private final double hoogte;
 
     public GrafiekWindow(double breedte, double hoogte) {
         super("Golvengrafiek");
         this.breedte = breedte;
         this.hoogte = hoogte;
         this.punten = new ArrayList<>();
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize((int) (breedte * WINDOW_SIZE), (int) (hoogte * WINDOW_SIZE));
         setResizable(false);
     }
@@ -56,6 +56,6 @@ public class GrafiekWindow extends JFrame {
     }
 
     public void toon() {
-        super.setVisible(true);
+        this.setVisible(true);
     }
 }

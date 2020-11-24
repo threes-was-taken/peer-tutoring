@@ -40,10 +40,10 @@ public class Galgje_3 {
                 }
             }
             if (sb.toString().equalsIgnoreCase(teRadenwoord)) {
-                System.out.println("Proficiat, je hebt het woord " + sb.toString() + " geraden in " + i + " beurten!");
+                System.out.println("Proficiat, je hebt het woord " + sb + " geraden in " + i + " beurten!");
                 System.exit(0);
             } else if (!sb.toString().equalsIgnoreCase(teRadenwoord)) {
-                System.out.println("Het te zoeken woord: " + sb.toString());
+                System.out.println("Het te zoeken woord: " + sb);
                 posInHangman += 7;
                 String hangmanGetoond = HANGMAN.substring(0, posInHangman);
                 System.out.println(hangmanGetoond);

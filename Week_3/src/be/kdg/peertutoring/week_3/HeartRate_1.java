@@ -59,7 +59,7 @@ public class HeartRate_1 {
             System.out.println("We gaan nu de maximale hartslag berekenen");
             for (int i = 1; true; i++) {
                 if (i == 3) {
-                    System.out.printf("Interval %d: Ren 60 seconden op volle snelheid.\n", i);
+                    System.out.printf("Interval %d: Ren 60 seconden op volle snelheid.\n", 3);
                     break;
                 }
                 System.out.printf("Interval %d: ren 30 seconden op volle snelheid\n", i);
@@ -115,8 +115,8 @@ public class HeartRate_1 {
             antwoord = s.next();
         }
 
-        String ster = "*";
-        String streep = "-";
+        final String ster = "*";
+        final String streep = "-";
 
         System.out.println("De hoeveelste dag voert u dit uit?");
         int ant = s.nextInt();

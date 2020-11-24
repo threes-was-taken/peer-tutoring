@@ -4,8 +4,8 @@ import java.awt.*;
 import java.util.Random;
 
 public class GolvenGrafiek {
-    private int aantal;
-    private Random random;
+    private final int aantal;
+    private final Random random;
 
     public GolvenGrafiek(int aantal) {
         this.aantal = aantal;

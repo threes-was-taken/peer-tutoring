@@ -25,7 +25,7 @@ public class Conversie_Deel2 {
 
         int val = start;
 
-        String leftAlignFormat = "| %-5d | %-5.1f |%n";
+        final String leftAlignFormat = "| %-5d | %-5.1f |%n";
 
         System.out.format("+-------+-------+%n");
         System.out.format("| °C    | °F    |%n");

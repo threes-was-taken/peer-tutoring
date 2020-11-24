@@ -29,7 +29,7 @@ public class Galgje_2 {
                 }
             }
             if(sbGuess.toString().equalsIgnoreCase(teRadenWoord)){
-                System.out.println("Profictiat, je hebt het woord " + sbGuess.toString() + " geraden in " + i + " beurten!");
+                System.out.println("Profictiat, je hebt het woord " + sbGuess + " geraden in " + i + " beurten!");
                 System.exit(0);
             } else if(!sbGuess.toString().equalsIgnoreCase(teRadenWoord)){
                 System.out.println("Het te zoeken woord: " + sbGuess);
