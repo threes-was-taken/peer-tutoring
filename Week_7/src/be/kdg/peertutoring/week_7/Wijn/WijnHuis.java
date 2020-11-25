@@ -42,8 +42,6 @@ public class WijnHuis {
 
     @Override
     public String toString() {
-        StringBuilder result = new StringBuilder();
-        result.append(String.format("Wijnhuis %s\n", naam.toUpperCase()));
 
         StringBuilder wijnenTekst = new StringBuilder();
         StringBuilder champagneTekst = new StringBuilder();
@@ -64,8 +62,7 @@ public class WijnHuis {
             }
         }
 
-        result.append(wijnenTekst).append(champagneTekst).append(likeurenTekst);
-
-        return result.toString();
+        return String.format("Wijnhuis %s\n", naam.toUpperCase()) +
+                wijnenTekst + champagneTekst + likeurenTekst;
     }
 }
