@@ -6,8 +6,8 @@ import java.util.List;
 
 public class WijnHuis {
     private static final int MAX_AANTAL = 10;
-    private List<Wijn> wijnen = new ArrayList<>();  //voorlopig gevuld met 10 null-objecten
-    private String naam;
+    private final List<Wijn> wijnen = new ArrayList<>();  //voorlopig gevuld met 10 null-objecten
+    private final String naam;
     private int aantal;
 
     public WijnHuis(String naam) {
@@ -32,8 +32,12 @@ public class WijnHuis {
     }
 
     public Wijn getOudsteWijn() {
-        Collections.sort(wijnen);
-        return wijnen.get(0);
+        if (!wijnen.isEmpty()){
+            Collections.sort(wijnen);
+            return wijnen.get(0);
+        }else{
+            return null;
+        }
     }
 
     @Override
