@@ -15,9 +15,9 @@ public class WijnHuis {
     }
 
     public void voegWijnToe(Wijn wijn) {
-        if (!zoekWijn(wijn) && wijnen.size() < 10){
+        if (!zoekWijn(wijn) && this.aantal < MAX_AANTAL){
             wijnen.add(wijn);
-            aantal = wijnen.size();
+            this.aantal = wijnen.size();
         }
     }
 
